@@ -39,9 +39,11 @@ Object[] expected = new Integer[] { 1, 2, 4, 8 };
 int n = 8;
 assertArrayEquals(expected, PerfectNumber.divisors( n ).toArray());
 }
+```
 
 The following tests can be use to test both imperative and functional solution:
 
+```java
 import static org.junit.Assert.assertEquals;
 import static retreat.PerfectNumber.STATE.ABUNDANT;
 import static retreat.PerfectNumber.STATE.DEFICIENT;
